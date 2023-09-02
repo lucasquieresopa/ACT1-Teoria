@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos en PDF</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Barra de navegación */
+        header {
+            background-color: #0077b6;
+            color: #ffffff;
+            padding: 10px 0;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 20px;
+        }
+
+        /* Contenido principal */
+        .main-content {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            color: #000000;
+        }
+
+        /* Estilos de las categorías de cursos */
+        .category {
+            display: none;
+        }
+
+        .english {
+            border: 2px solid #0077b6;
+        }
+
+        .french {
+            border: 2px solid #ff6b6b;
+        }
+
+        .course-box {
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Estilos responsivos */
+        @media screen and (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <container>
+            <nav>
+                <a href="#contacto">Información de contacto</a>
+                <a href="#mantenimiento">Información de mantenimiento</a>
+                <a href="#cursos">Catálogo de cursos</a>
+            </nav>
+        </container>
+    </header>
+
+    <container class="main-content">
+        <h1>Bienvenido a nuestro sitio de cursos en PDF</h1>
+        <p>Aquí encontrarás una variedad de cursos disponibles en formato PDF.</p>
+        <p>¡Explora nuestros cursos y aprende algo nuevo!</p>
+    </container>
+
+    <container id="contacto" class="main-content">
+        <h2>Información de contacto</h2>
+        <p>Para cualquier consulta, por favor contáctanos:</p>
+        <p>Email: <a href="mailto:lucassalanitro32@gmail.com">lucassalanitro32@gmail.com</a></p>
+    </container>
+
+    <container id="mantenimiento" class="main-content">
+        <h2>Información de mantenimiento</h2>
+        <p>Mantención a cargo de Lucas Salanitro</p>
+    </container>
+
+    <container id="cursos" class="main-content">
+        <h2>Catálogo de cursos</h2>
+        <p>Selecciona una categoría:</p>
+        <select id="categoria">
+            <option value="english">Inglés</option>
+            <option value="french">Francés</option>
+        </select>
+        <div class="category english">
+            <div class="course-box">
+                <h3>Inglés principiantes</h3>
+                <a href="en_principiantes.pdf">Descargar programa</a>
+            </div>
+            <div class="course-box">
+                <h3>Inglés intermedio</h3>
+                <a href="en_intermedio.pdf">Descargar programa</a>
+            </div>
+            <div class="course-box">
+                <h3>Inglés avanzado</h3>
+                <a href="en_avanzado.pdf">Descargar programa</a>
+            </div>
+        </div>
+        <div class="category french">
+            <div class="course-box">
+                <h3>Francés principiantes</h3>
+                <a href="fr_principiantes.pdf">Descargar programa</a>
+            </div>
+            <div class="course-box">
+                <h3>Francés intermedio</h3>
+                <a href="fr_intermedio.pdf">Descargar programa</a>
+            </div>
+            <div class="course-box">
+                <h3>Francés avanzado</h3>
+                <a href="fr_avanzado.pdf">Descargar programa</a>
+            </div>
+        </div>
+    </container>
+
+    <script>
+        // JavaScript para mostrar cursos según la categoría seleccionada
+        document.getElementById('categoria').addEventListener('change', function() {
+            var categoriaSeleccionada = this.value;
+            var categorias = document.querySelectorAll('.category');
+            categorias.forEach(function(categoria) {
+                categoria.style.display = 'none';
+            });
+            document.querySelector('.' + categoriaSeleccionada).style.display = 'block';
+        });
+    </script>
+</body>
+</html>

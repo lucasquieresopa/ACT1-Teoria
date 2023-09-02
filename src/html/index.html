@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos en PDF</title>
+    <link rel="stylesheet" type="text/css" href="css/estilosIA.css">
+</head>
+
+<style>
+    p {color: green}
+</style>
+
+<body>
+    <header>
+        <container>
+            <nav>
+                <a href="#contacto">Información de contacto</a>
+                <a href="#mantenimiento">Información de mantenimiento</a>
+                <a href="#cursos">Catálogo de cursos</a>
+                <a href="#actividad1">ACTIVIDAD 1 - PROYECTO DE SOFTWARE</a>
+            </nav>
+        </container>
+    </header>
+    
+
+    <container id="contacto" class="main-content">
+        <h1>Información de contacto</h1>
+        <p style="color: brown; text-align: center">Para cualquier consulta, por favor contáctanos:</p>
+        <p>Email: <a href="mailto:lucassalanitro32@gmail.com">lucassalanitro32@gmail.com</a></p>
+    </container>
+
+    <container id="mantenimiento" class="main-content">
+        <h1>Información de mantenimiento</h1>
+        <p style="padding-left: 1000px">Mantención a cargo de Lucas Salanitro</p>
+    </container>
+
+    <container id="cursos" class="main-content">
+        <h1>Catálogo de Cursos</h1>
+        <p>Selecciona una categoría:</p>
+        <select id="categoria">
+            <option value="english">Inglés</option>
+            <option value="french">Francés</option>
+        </select>
+        <div class="english">
+            <h2>Cursos de Inglés</h2>
+            <div class="course-box">
+                <h3>Inglés principiantes</h3>
+                <a href="programas/ingles_principiantes.pdf">Descargar programa</a>
+            </div>
+            <div class="course-box">
+                <h3>Inglés intermedio</h3>
+                <a href="programas/ingles_intermedio.pdf">Descargar programa</a>
+            </div>
+            <div class="course-box">
+                <h3>Inglés avanzado</h3>
+                <a href="programas/ingles_avanzado.pdf">Descargar programa</a>
+            </div>
+        </div>
+        <div class="french">
+            <h2>Cursos de Francés</h2>
+            <div class="course-box">
+                <h3>Francés principiantes</h3>
+                <a href="programas/frances_principiantes.pdf">Descargar programa</a>
+            </div>
+            <div class="course-box">
+                <h3>Francés intermedio</h3>
+                <a href="programas/frances_intermedio.pdf">Descargar programa</a>
+            </div>
+            <div class="course-box">
+                <h3>Francés avanzado</h3>
+                <a href="programas/frances_avanzado.pdf">Descargar programa</a>
+            </div>
+        </div>
+    </container>
+    <container id="actividad1" class="main-content">
+        <h1>Actividad 1 - Consignas</h1>
+        <h2>Parte I</h2>
+        <p>Interactuá con chatGTP u otra IA similar  de manera tal de obtener un código que permita resolver la siguiente consigna.  Se solicita utilizar esta herramienta para luego realizar un análisis crítico sobre los resultados.</p>
+        <h2>Parte II</h2>
+        <p>Seguí las indicaciones y respondé en el video: (20 pts.)</p>
+        <a href="https://www.google.com/">Video de la explicación</a>
+    </container>
+</body>
+</html>

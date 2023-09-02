@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos en PDF</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Barra de navegación */
+        header {
+            background-color: #0077b6;
+            color: #ffffff;
+            padding: 10px 0;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 20px;
+        }
+
+        /* Contenido principal */
+        .main-content {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        /* Estilos responsivos */
+        @media screen and (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <container>
+            <nav>
+                <a href="#contacto">Información de contacto</a>
+                <a href="#mantenimiento">Información de mantenimiento</a>
+                <a href="#cursos">Catálogo de cursos</a>
+            </nav>
+        </container>
+    </header>
+
+    <container class="main-content">
+        <h1>Bienvenido a nuestro sitio de cursos en PDF</h1>
+        <p>Aquí encontrarás una variedad de cursos disponibles en formato PDF.</p>
+        <p>¡Explora nuestros cursos y aprende algo nuevo!</p>
+    </container>
+
+    <container id="contacto" class="main-content">
+        <h2>Información de contacto</h2>
+        <p>Para cualquier consulta, por favor contáctanos:</p>
+        <p>Email: info@tusitio.com</p>
+        <p>Teléfono: +123456789</p>
+    </container>
+
+    <container id="mantenimiento" class="main-content">
+        <h2>Información de mantenimiento</h2>
+        <p>Estamos trabajando en mejorar nuestro sitio. Disculpa las molestias.</p>
+    </container>
+
+    <container id="cursos" class="main-content">
+        <h2>Catálogo de cursos</h2>
+        <p>Aquí encontrarás la lista de nuestros cursos disponibles en PDF.</p>
+        <!-- Puedes agregar aquí la lista de cursos en formato PDF -->
+    </container>
+</body>
+</html>

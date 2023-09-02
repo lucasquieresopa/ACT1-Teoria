@@ -1,0 +1,71 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Barra de navegación */
+header {
+    background-color: #0077b6;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 20px;
+}
+
+/* Contenido principal */
+.main-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    color: #000000;
+}
+
+/* Estilos de las categorías de cursos */
+.category {
+    display: none;
+}
+
+/* Estilos de las cajas de cursos */
+.course-box {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #0077b6; /* Borde azul para cursos de Inglés */
+}
+
+.course-box a {
+    text-decoration: none;
+    color: #0077b6; /* Color del enlace azul para cursos de Inglés */
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
+
+
+
